@@ -92,6 +92,8 @@ public class Expr {
 
             return false;
         } catch (RuntimeException ex) {
+            // Division by 0 exception.
+            // No need to do anything, just return false since the combination is invalid anyway.
             return false;
         }
     }
